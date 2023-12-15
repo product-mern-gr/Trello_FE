@@ -1,0 +1,25 @@
+@import '../setting.scss';
+
+$board-bg-color: #0079bf;
+
+.navbar-board {
+  height: $navbar-board-height;
+  padding-left: $gap;
+  display: flex;
+  align-items: center;
+  background-color: $board-bg-color;
+  font-size: 1.1rem;
+
+  .navbar-title{
+    margin: auto;
+
+    h1{
+      color: white;
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+
+  }
+
+}

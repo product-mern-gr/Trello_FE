@@ -1,0 +1,136 @@
+.login {
+  width: 100%;
+  display: flex;
+  
+
+  .backgrImg {
+    width: 35%;
+    position: fixed;
+
+    img { 
+      width: 80%;
+      display: block;
+    }
+  }
+  .leftImg {
+    bottom: 0;
+    left: 0;
+
+    img {
+      float: left;
+    }
+  }
+  .rightImg {
+    bottom: 0;
+    right: 0;
+
+    img {
+      float: right;
+    }
+  }
+  
+  .login__wrapper {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 32px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    .login__logoHeader{
+      display: block;
+      margin: 0 auto;
+    }
+
+    .login__title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+      font-weight: 500;
+      margin-top: 24px;
+    }
+
+    .login__subText {
+      color: #97a0af;
+      margin: 20px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .login__signInWithSocialBtn {
+      width: 100%;
+      background-color: white;
+      box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+      &:not(:first-child) {
+          margin-top: 20px;
+      }
+      
+      .button {
+          border: solid 1px black;
+      }
+
+      .icon{
+          width: 5%;
+          display: flex;
+          justify-content: center;
+          margin-right: 10px;
+          color: black;
+      }
+  
+      .text{
+          width: 90%;
+          padding-right: 20px;
+          color: black;
+          font-weight: 500;
+          text-transform: capitalize;
+          text-align: center;
+      }
+    }
+
+    .login__link {
+      width: 100%;
+      margin: 25px 0;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      
+      a {
+          text-decoration: none;
+          font-size: 14px;
+          width: 100%;
+          text-align: center;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    footer {
+      p {
+          font-size: 12px;
+          text-align: center;
+          margin: 0;
+      }
+      div {
+          margin-bottom: 12px;
+          font-size: 12px;
+          text-align: center;
+          color: #6b778c;
+
+          a {
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+      }
+      
+      .login__logoFooter {
+          display: block;
+          margin: 0px auto;
+          margin-top: 20px;
+          margin-bottom: 7px;
+      }
+    }
+  }
+}

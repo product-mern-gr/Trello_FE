@@ -1,0 +1,69 @@
+@import "~bootstrap/scss/bootstrap";
+@import './setting.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  height: 100vh;
+  overflow: hidden;
+  background-color: $board-bg-color;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $app-main-text-color;
+  
+  .icon {
+    font-size: 14px;
+    margin-right: 0 3px;
+  }
+  .clone-trello-container {
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  //remove outline of bootstrap
+  textarea:focus, 
+  textarea.form-control:focus, 
+  input.form-control:focus, 
+  input[type=text]:focus, 
+  input[type=password]:focus, 
+  input[type=email]:focus, 
+  input[type=number]:focus, 
+  [type=text].form-control:focus, 
+  [type=password].form-control:focus, 
+  [type=email].form-control:focus, 
+  [type=tel].form-control:focus, 
+  [contenteditable].form-control:focus {
+    box-shadow: none;
+    border: 1px solid $input-border-color;
+  }
+  .btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .trello-content-editable {
+    background-color: inherit;
+    border: none;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+
+    &:focus {
+      background-color: white;
+    }
+  }
+
+  span.cancle-icon {
+    margin-left: $gap;
+      i {
+        font-size: 20px;
+        cursor: pointer;
+        color: $alert-danger;
+        &:hover{
+          color: darken($alert-danger, 10);
+        }
+      }
+  }
+}

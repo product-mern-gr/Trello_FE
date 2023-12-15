@@ -1,0 +1,23 @@
+.NewBoardThumbnail{
+  color: black;
+  display: flex;
+  align-items: center;
+  width: 24%;
+  height: 180px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin:0 0 20px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  p {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &:hover{
+    background-color: rgb(220, 223, 228);
+  }
+}
